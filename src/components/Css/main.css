@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h6 {
+  color: rgb(95, 94, 94);
+}
+
+.search-btn:hover {
+  color: #5e46ad !important;
+}
+
+.li:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+.main {
+  background-color: rgb(119, 145, 196);
+  color: #fff;
+}
+
+.login-heading {
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn1 {
+  background-color: antiquewhite;
+  height: 3rem;
+  width: 10rem;
+  color: rgb(119, 145, 196);
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn1:hover {
+  border: 2px solid antiquewhite;
+}
+
+/*-------------Home page --------------  */
+
+.aside {
+  background-color: #5e46ad;
+}
+
+.aside-ul {
+  gap: 50px;
+  margin-top: 50px;
+}
+.aside .li {
+  padding-left: 20px;
+  width: 150px;
+}
+.home-header {
+  background: url("../../assets/home-header.jpg") center/cover no-repeat;
+}
+
+.h-20 {
+  height: 2.2rem;
+}
+
+.w-40 {
+  width: 30rem;
+}
+.row {
+  --bs-gutter-x: 0rem !important;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(0 * var(--bs-gutter-x)) !important;
+}
+.card {
+  min-width: 8rem !important;
+}
+.cards-main-div {
+  margin-left: 0.5rem;
+  padding-top: 10px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.search-main {
+  display: flex;
+  margin: 1rem;
+  max-width: 70%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.d-flex::-webkit-scrollbar {
+  display: none;
+}
+
+.palyImg {
+  border-radius: 10px;
+  height: 110px;
+  width: 120px;
+  background-color: #5e46ad;
+  color: white;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.search-flx {
+  flex-wrap: wrap;
+}
+
+.d-tn {
+  display: none !important;
+}
+
+@media screen and (max-width: 850px) {
+  .aside .li {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .aside-t {
+    display: none;
+  }
+
+  .home {
+    grid-template-columns: 10% 90%;
+  }
+  .d-tn {
+    display: block !important;
+  }
+  .d-tm {
+    display: none !important;
+  }
+  .aside .li {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .aside-ul {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: center;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .search-main {
+    max-width: 100%;
+  }
+
+  .add-play {
+    max-width: 90% !important;
+  }
+}
